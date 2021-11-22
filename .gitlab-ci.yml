@@ -25,4 +25,4 @@ deploy:
   tags:
   - runner-docker
   only:
-    - master
+    - main
