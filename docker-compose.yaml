@@ -40,6 +40,7 @@ services:
         gelf-address: udp://log.it.scancity.ru:12202
         tag: traefik
 
+#
 
 networks:
   traefik-net:
