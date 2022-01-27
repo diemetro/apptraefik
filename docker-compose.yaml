@@ -35,6 +35,10 @@ services:
         delay: 5s
         max_attempts: 5
         window: 10s
+      labels:
+        - "traefik.http.middlewares.traefik-auth.basicauth.users=admin:$$apr1$$xYyUiFZg$$mzOfwqqPdlxByOfqowLH/."
+        - "traefik.http.routers.traefik.middlewares=traefik-auth"
+
     logging:
       driver: gelf
       options:
